@@ -4,7 +4,7 @@ import massas from "../public/massas.png";
 
 function App() {
   return (
-    <div className="flex flex-col justify-center ">
+    <div className="container xl flex flex-col gap-10">
       <div className="flex justify-center gap-10">
         <img className="w-100 h-100" src={chefe} alt="" />
 
@@ -27,7 +27,7 @@ function App() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 w-80">
+      <div className="flex flex-col gap-5 xl px-28 ">
         <h1 className="text-white font-serif text-4xl">Categorias</h1>
         <div>
           <div>
