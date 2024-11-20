@@ -1,6 +1,7 @@
 import "./App.css";
 import chefe from "../public/chefe.png";
 import massas from "../public/massas.png";
+import Categ from "../components/Categ";
 
 function App() {
   return (
@@ -29,14 +30,9 @@ function App() {
 
       <div className="flex flex-col gap-5 xl px-28 ">
         <h1 className="text-white font-serif text-4xl">Categorias</h1>
-        <div>
-          <div>
-            <img src={massas} alt="" />
-            <h1 className="titulo text-white text-2xl relative z-10 ">
-              Massas
-            </h1>
-            <div className="sombra relative z-1"></div>
-          </div>
+        <div className="flex gap-5 flex-wrap">
+          <Categ imagem={massas} name={"Massas"} />
+          <Categ imagem={massas} name={"Lasanha"} />
         </div>
       </div>
     </div>
