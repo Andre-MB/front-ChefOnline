@@ -3,7 +3,7 @@ body {
 }
 
 .sombra {
-  width: 230px;
+  width: 280px;
   height: 100px;
   margin-top: -100px;
   border-radius: 17px;
@@ -14,7 +14,13 @@ body {
     transparent 10px
   );
 }
+
 .titulo {
   padding-left: 10px;
   margin-top: -40px;
+}
+
+.imageCard {
+  width: 280px;
+  height: 250px;
 }
