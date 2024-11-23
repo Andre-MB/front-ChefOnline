@@ -5,7 +5,7 @@ export default function Category() {
 
   return (
     <>
-      <div className="container xl flex flex-col items-center">
+      <div className="container flex flex-col items-center">
         <h1 className="text-8xl text-white font-serif tracking-tighter">
           {name}
         </h1>
@@ -20,7 +20,7 @@ export default function Category() {
           />
           <img
             name="search"
-            className="search relative  -m-7 "
+            className="search relative  -m-7  max-lg:mr-5"
             src="../public/airport-searchor.png"
             alt=""
           />
