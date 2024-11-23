@@ -1,6 +1,7 @@
 import chefe from "../public/chefe.png";
 import massas from "../public/massas.png";
 import Categ from "../components/Categ";
+import "../src/index.css";
 
 export default function Home() {
   return (
