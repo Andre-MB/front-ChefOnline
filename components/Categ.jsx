@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export default function Categ({ imagem, name }) {
   const navegacao = () => {
@@ -6,11 +7,15 @@ export default function Categ({ imagem, name }) {
   };
 
   return (
-    <div onClick={navegacao}>
-      <img className="imageCard" src={imagem} alt="" />
-      <h1 className="titulo text-white text-2xl relative z-10 ">{name}</h1>
-      <div className="sombra relative z-1"></div>
-    </div>
+    <>
+      <Link to={`/category/${name}`}>
+        <div onClick={navegacao}>
+          <img className="imageCard" src={imagem} alt="" />
+          <h1 className="titulo text-white text-2xl relative z-10 ">{name}</h1>
+          <div className="sombra relative z-1"></div>
+        </div>
+      </Link>
+    </>
   );
 }
 
