@@ -1,5 +1,6 @@
 import chefe from "../public/chefe.png";
 import massas from "../public/massas.png";
+import doces from "../public/image.png";
 import Categ from "../components/Categ";
 import "../src/index.css";
 
@@ -33,6 +34,7 @@ export default function Home() {
         <div className="flex gap-9 flex-wrap">
           <Categ imagem={massas} name={"Massas"} />
           <Categ imagem={massas} name={"Lasanha"} />
+          <Categ imagem={doces} name={"Doces"} />
         </div>
       </div>
     </div>
