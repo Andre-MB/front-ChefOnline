@@ -46,6 +46,22 @@ export default function Category() {
                 Integral, ovos e calda de caramelo.
               </p>
             </div>
+
+            <div className="flex gap-3 w-1/3">
+              <div className="flex">
+                <h1>Dificuldade</h1>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <img src="../public/prato.png" alt="" width={30} />
+                <h1>Porções</h1>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <img src="../public/despertador2.png" width={30} alt="" />
+                <h1>Tempo</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
