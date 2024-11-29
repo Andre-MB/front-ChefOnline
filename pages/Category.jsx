@@ -26,17 +26,15 @@ export default function Category() {
           />
         </div>
 
-        <div className=" text-white flex border-t border-white w-full mt-10">
-          <div className="flex p-5 w-full bg-slate-100 bg-opacity-20 rounded-lg m-3">
+        <div className=" text-white flex border-t border-white  mt-10">
+          <div className="flex p-2 w-full bg-slate-100 bg-opacity-20 rounded-lg m-3">
             <img
-              className="rounded-lg"
-              width="200px"
-              height="200px"
+              className="imagemDoCard rounded-lg"
               src="../public/image.png"
               alt=""
             />
 
-            <div className="flex flex-col w-2/4 p-3 ">
+            <div className="flex flex-col w-2/5 p-3 ">
               <h1 className="text-xl text-green-500 font-bold">
                 Pudim simplão
               </h1>
@@ -47,7 +45,7 @@ export default function Category() {
               </p>
             </div>
 
-            <div className="flex gap-3 w-1/3">
+            <div className="flex flex-col gap-3 w-1/3">
               <div className="flex flex-col">
                 <div className="flex">
                   <img src="../public/black-star-silhouette-verde.png" alt="" />
@@ -57,16 +55,22 @@ export default function Category() {
                 <h1>Dificuldade</h1>
               </div>
 
-              <div className="flex flex-col items-center">
-                <img src="../public/prato.png" alt="" width={30} />
-                <h1>Porções</h1>
+              <div className="flex flex-col items-start w-max">
+                <div className="flex flex-col items-center">
+                  <img src="../public/prato.png" alt="" width={30} />
+                  <h1>Porções</h1>
+                </div>
               </div>
 
-              <div className="flex flex-col items-center">
-                <img src="../public/despertador2.png" width={30} alt="" />
-                <h1>Tempo</h1>
+              <div className="flex flex-col items-start">
+                <div className="flex flex-col items-center">
+                  <img src="../public/despertador2.png" width={30} alt="" />
+                  <h1>Tempo</h1>
+                </div>
               </div>
             </div>
+
+            {/*  */}
           </div>
         </div>
       </div>

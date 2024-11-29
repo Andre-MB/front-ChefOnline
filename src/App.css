@@ -32,3 +32,8 @@ body {
 .search {
   margin-left: 58%;
 }
+
+.imagemDoCard {
+  width: 200px;
+  height: 200px;
+}
