@@ -48,7 +48,12 @@ export default function Category() {
             </div>
 
             <div className="flex gap-3 w-1/3">
-              <div className="flex">
+              <div className="flex flex-col">
+                <div className="flex">
+                  <img src="../public/black-star-silhouette-verde.png" alt="" />
+                  <img src="../public/black-star-silhouette-cinza.png" alt="" />
+                  <img src="../public/black-star-silhouette-cinza.png" alt="" />
+                </div>
                 <h1>Dificuldade</h1>
               </div>
 
