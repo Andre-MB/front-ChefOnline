@@ -1,8 +1,14 @@
 import { useParams } from "react-router-dom";
 import CardCatgory from "../components/CardCatgory";
+import { useState } from "react";
 
 export default function Category() {
   const { name } = useParams();
+
+  const [nameRevenue] = useState("Pudim simplão");
+  const [desc] = useState(
+    "Receita de Pudim de Leite Condensado da Mamãezinha, tradicional e delicioso, feito com Leite MOÇA, Leite Líquido NINHO Forti+ Integral, ovos e calda de caramelo"
+  );
 
   return (
     <>
@@ -28,7 +34,13 @@ export default function Category() {
         </div>
 
         <div className="grid grid-cols-2 text-white border-t border-white mt-10 gap-3 pt-2">
-          <CardCatgory />
+          <CardCatgory
+            name={nameRevenue}
+            desc={desc}
+            dificult={"fácil"}
+            pigs={"10"}
+            time={"110 min"}
+          />
         </div>
       </div>
     </>
