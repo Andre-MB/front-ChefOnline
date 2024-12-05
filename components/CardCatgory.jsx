@@ -1,6 +1,59 @@
 import PropTypes from "prop-types";
 
 export default function CardCatgory({ name, desc, dificult, pigs, time }) {
+  const renderContent = () => {
+    switch (dificult) {
+      case "fácil":
+        return (
+          <>
+            <img src="../public/black-star-silhouette-verde.png" alt="" />
+            <img src="../public/black-star-silhouette-cinza.png" alt="" />
+            <img src="../public/black-star-silhouette-cinza.png" alt="" />
+          </>
+        );
+      case "médio":
+        return (
+          <>
+            <img src="../public/black-star-silhouette-verde.png" alt="" />
+            <img src="../public/black-star-silhouette-verde.png" alt="" />
+            <img src="../public/black-star-silhouette-cinza.png" alt="" />
+          </>
+        );
+      case "difícil":
+        return (
+          <>
+            <img src="../public/black-star-silhouette-verde.png" alt="" />
+            <img src="../public/black-star-silhouette-verde.png" alt="" />
+            <img src="../public/black-star-silhouette-verde.png" alt="" />
+          </>
+        );
+    }
+
+    //       import React from 'react';
+
+    // const StarRating = ({ difficult }) => {
+    //   const starPaths = {
+    //     green: "../public/black-star-silhouette-verde.png",
+    //     gray: "../public/black-star-silhouette-cinza.png",
+    //   };
+
+    //   const difficulties = {
+    //     fácil: [starPaths.green, starPaths.gray, starPaths.gray],
+    //     médio: [starPaths.green, starPaths.green, starPaths.gray],
+    //     difícil: [starPaths.green, starPaths.green, starPaths.green],
+    //   };
+
+    //   const renderStars = () =>
+    //     (difficult in difficulties ? difficulties[difficult] : []).map((src, index) => (
+    //       <img key={index} src={src} alt="Star" />
+    //     ));
+
+    //   return <div>{renderStars()}</div>;
+    // };
+
+    // export default StarRating;
+  };
+
   return (
     <div>
       <div className="flex p-2 bg-slate-100 bg-opacity-20 w-full rounded-lg ">
@@ -17,11 +70,7 @@ export default function CardCatgory({ name, desc, dificult, pigs, time }) {
 
         <div className="flex flex-col gap-3 items-center">
           <div className="flex flex-col w-max">
-            <div className="flex">
-              <img src="../public/black-star-silhouette-verde.png" alt="" />
-              <img src="../public/black-star-silhouette-cinza.png" alt="" />
-              <img src="../public/black-star-silhouette-cinza.png" alt="" />
-            </div>
+            <div className="flex">{renderContent()}</div>
             <h1>Dificuldade</h1>
           </div>
 
