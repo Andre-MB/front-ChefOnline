@@ -9,10 +9,12 @@ export default function Categ({ imagem, name }) {
   return (
     <>
       <Link to={`/category/${name}`}>
-        <div onClick={navegacao}>
+        <div className="group hover:scale-110" onClick={navegacao}>
           <img className="imageCard rounded-2xl" src={imagem} alt="" />
-          <h1 className="titulo text-white text-2xl relative z-10 ">{name}</h1>
-          <div className="sombra relative z-1"></div>
+          <h1 className="titulo text-white text-2xl relative z-10 hidden group-hover:flex transition">
+            {name}
+          </h1>
+          <div className="sombra relative z-1 hidden group-hover:flex transition"></div>
         </div>
       </Link>
     </>
