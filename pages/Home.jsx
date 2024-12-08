@@ -8,9 +8,13 @@ export default function Home() {
   return (
     <div className="container xl flex flex-col gap-10">
       <div className="flex justify-center gap-10">
-        <img className="w-100 h-100" src={chefe} alt="" />
+        <img
+          className="w-100 h-100 animate-fade-right animate-duration-[800ms] animate-ease-in"
+          src={chefe}
+          alt=""
+        />
 
-        <div className="flex-row w-2/4 ">
+        <div className="flex-row w-2/4 animate-fade-left animate-duration-[800ms] animate-ease-in">
           <p className="text-2xl leading-7 text-white font-serif text-justify indent-8">
             <span className="text-8xl leading-7 tracking-tighter">C</span>hef
             Gustavo Moretti é um renomado cozinheiro com raízes na Itália e no
@@ -29,7 +33,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 xl px-28 ">
+      <div className="flex flex-col gap-5 xl px-28 animate-fade animate-duration-[800ms] animate-ease-in">
         <h1 className="text-white font-serif text-4xl">Categorias</h1>
         <div className="flex gap-9 flex-wrap">
           <Categ imagem={massas} name={"Massas"} />
