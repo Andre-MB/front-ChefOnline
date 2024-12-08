@@ -37,3 +37,13 @@ body {
   width: 200px;
   height: 200px;
 }
+
+.two-columns {
+  width: 75%;
+  color: aliceblue;
+  columns: 2;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 6%;
+}
